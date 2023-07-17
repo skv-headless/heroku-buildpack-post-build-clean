@@ -44,7 +44,7 @@ while read PATTERN; do
     echo "-----> Scanning glob pattern: '${PATTERN}'"
     for FILENAME in ${PATTERN}; do
       if [[ -d "${FILENAME}" ]]; then
-        echo "       Removing directory '${FILENAME}' from slug!!!!!!!"
+        echo "       Removing directory '${FILENAME}' from slug????????"
         rm -rf "${FILENAME}"
         continue
       elif [[ -f "${FILENAME}" ]]; then
